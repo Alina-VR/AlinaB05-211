@@ -1,15 +1,15 @@
-public class Task1
-{
+public class Task1 {
     //посчитать факториал числа n
     //0.5 балла - если посчитаете в цикле
     //1 балл - если посчитаете рекурсией
-    public static int fact(int n){
-        return n;
+    public static int fact(int n) {
+        if (n == 1) return 1;
+        return fact(n - 1) * n;
     }
 
     //вывести таблицу умножения на экран - 1 балл
     //подсказка - использовать двойной for
-    public static void table(){
+    public static void table() {
         //Ваше решение здесь
     }
 
@@ -17,7 +17,7 @@ public class Task1
     //можно посчитать для трехзначного - 0.5 балла
     //для любого числа - 1 балл
     //подсказка - в случае для любого числа используйте while
-    public static int sum(int n){
+    public static int sum(int n) {
         //Ваше решение здесь
         return n;
     }
@@ -38,7 +38,7 @@ public class Task1
     //и вывести, сколько дней в году
     //правильный ответ - 0.5 балла
     public static int daysInYear(int year) {
-        if (isLeapYear(year)){
+        if (isLeapYear(year)) {
             //
         } else {
             //
@@ -49,14 +49,14 @@ public class Task1
     //определить номер дня недели по строке
     //например: Понедельник - 1
     //правильный ответ - 1 балл
-    public static int dayOfTheWeek(String n){
+    public static int dayOfTheWeek(String n) {
         //Ваше решение здесь
         return 0;
     }
 
     //вывести массив на экран в виде: [1, 5, 3, 7, 10, 2, 5]
     //правильное решение - 0.5 балла
-    public static void printArray(int[] array){
+    public static void printArray(int[] array) {
         //Ваше решение здесь
     }
 
@@ -65,7 +65,7 @@ public class Task1
     // [1, 5, 3, 7, 10, 2, 5]
     // ...
     //правильное решение - 0.5 балла
-    public static void printArray(int[][] array){
+    public static void printArray(int[][] array) {
         //Ваше решение здесь
     }
 
@@ -73,14 +73,14 @@ public class Task1
     //если не знаете, как сортировать, то подсказка -
     //метод пузырька (один из самых простых для понимания)
     //правильный ответ - 1 балл
-    public static int[] sort(int[] array){
+    public static int[] sort(int[] array) {
         //Ваше решение здесь
         return array;
     }
 
 
     //здесь можете тестировать свои решения
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Факториал:");
         System.out.println(fact(5));
 
@@ -96,12 +96,12 @@ public class Task1
         System.out.println("День недели:");
         System.out.println(dayOfTheWeek("Понедельник"));
 
-        int[] array1D = {1,5,3,7,10,2,5};
+        int[] array1D = {1, 5, 3, 7, 10, 2, 5};
         System.out.println("Вывод отсортированного массива:");
         printArray(sort(array1D));
 
         System.out.println("Вывод двумерного массива:");
-        int[][] array2D = {{1,5,3,7,10,2,5}, {1,5,3,7,10,2,5}};
+        int[][] array2D = {{1, 5, 3, 7, 10, 2, 5}, {1, 5, 3, 7, 10, 2, 5}};
         printArray(array2D);
     }
 }
