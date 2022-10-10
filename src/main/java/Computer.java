@@ -18,7 +18,7 @@ class ComputerImpl implements Computer {
     }
 
     public String toString() {
-        return getClass() + " with " + processor + " " + RAM + " " + HardDrive;
+        return String.valueOf(getClass()).split(" ")[1] + " with " + processor + " " + RAM + " " + HardDrive;
     }
 
     public void turn_on() {
