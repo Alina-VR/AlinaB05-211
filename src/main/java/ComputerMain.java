@@ -1,4 +1,4 @@
- class ComputerMain {
+class ComputerMain {
     public static void main(String[] args) {
         Computer[] array = {new Desktop("intel i5", "16GB", "512GB", "Nvidia"),
                 new Laptop("intel i5", "16GB", "512GB", "Display1", "Keyboard1"),
@@ -12,7 +12,5 @@
             i.turnOff();
         }
     }
-
-
 
 }
